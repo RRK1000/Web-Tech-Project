@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <style>
+    #board {
+      width: 306px;
+      height: 306px;
+      /* border: 3px solid #ccc; */
+    }
+    #board div {
+      background-color: rgba(100, 231, 248, 0.849);
+      float: left;
+      height: 100px;
+      width: 100px;
+      border: 2px solid rgb(252, 253, 253);
+      text-align: center;
+    }
+    #board div span {
+      font-family: arial;
+      font-size: 70px;
+      margin-top: 10px;
+      margin-bottom: 10px; 
+      display: block;
+    }
+    .winner { background-color: lightgreen; }
+    #status { font-size: 1.2em; font-weight: bold; }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/tictactoe_ai.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+
+<body background="bg2.png">
+  <div class="jumbotron text-center">
+    <div class="row">
+
+      <div class="col-7 ml-auto display-3 animated fadeInLeft">TIC TAC TOE</div>
+      <button class="btn btn-danger h-25 mt-auto col-1 ml-auto" onclick="logout()">Logout</button>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3 ml-2 mr-3">
+      <div class="jumbotron align-center">
+        <h2 id="p1">
+          <div class="lead row">(user)</div>Player X: <span id="xwins">0</span>
+        </h2> <br />
+        <h2 id="p2">
+          <div class="lead row">(AI)</div>Player O: <span id="owins">0</span>
+        </h2>
+        <div class="lead" id="txtHint"></div>
+        <button onClick="newGame()" class="btn btn-dark mt-2">New Game</button>
+        <a href="gameSelection.html" class="btn btn-info mt-2 ml-2" id="index">Home</a>
+
+      </div>
+    </div>
+    <div class="col-3 offset-1">
+      <!-- <span id='turn' class="display-4">Player X turn</span> -->
+
+      <br />
+      <div id="board">
+        <div id="s00"></div>
+        <div id="s10"></div>
+        <div id="s20"></div>
+        <div id="s01"></div>
+        <div id="s11"></div>
+        <div id="s21"></div>
+        <div id="s02"></div>
+        <div id="s12"></div>
+        <div id="s22"></div>
+      </div>
+    </div>
+    <!-- <p id="status"></p>
+    <p>X wins: <br />
+      Y wins:</p>
+    <p></p>
+    <p>
+      Strategies:<br />
+      <label><input disabled type="checkbox" name="random" value="1" checked /> Random</label><br />
+    </p> -->
+    <script>
+      function logout() {
+        localStorage.clear();
+        window.location = "index.html";
+      }
+    </script>
+</body>
+
+</html>
