@@ -1,0 +1,14 @@
+table {
+	border-collapse:collapse;
+}
+
+td {
+	background-color: rgba(100, 231, 248, 0.849);
+	border: 3px solid rgb(252, 253, 253);
+	font-size:80px;
+	color:#ffffff;
+	border-radius: 10px 10px 10px 10px;
+}
+#turn{
+	color:#fff
+}

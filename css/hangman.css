@@ -1,0 +1,147 @@
+/* Variabes */
+/* Mixin's */
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .wrappper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  canvas {
+    color: #fff;
+    border: #fff dashed 2px;
+    padding: 15px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+  
+  h1 {
+    font-size: 2.6em;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  p {
+    font-size: 1.6em;
+  }
+
+  #hold{
+    font-size:2em;
+  }
+  
+  #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #alphabet li {
+    float: left;
+    margin: 5px;
+    font-size: 2em;
+    list-style: none;
+    width: 75px;
+    height: 75px;
+    padding: 10px; 
+    background: #fff;
+    color: #0f2a8e;
+    cursor: pointer;
+    /* -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; */
+    border-radius: 10px;
+    border: solid 2px #3612c5;
+  }
+  #alphabet li:hover {
+    background: #000000;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  
+  #my-word {
+    color:#ffffff;
+    margin: 0;
+    display: block;
+    padding: 0;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline;
+    padding: 0 10px;
+    font-size: 1.6em;
+  }
+  #catagoryName {
+    font-size: 2em;
+    padding-bottom: 0px
+      
+  }
+  
+  .active {
+    
+    opacity: 0.4;
+    /* filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default; */
+  }
+  .active:hover {
+    -webkit-animation-name: shake; 
+    animation-name: shake;
+    /* -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out; */
+  }
+  
+  #mylives {
+    color:#000000;
+    font-size: 3em;
+    text-shadow: 1px 1px #fff;
+    font-style: italic;
+    /* text-align: center; */
+    display: block;
+  }
+  
+  @media (max-width: 767px) {
+    #alphabet {
+      padding: 0 0 0 15px;
+    }
+  }
+  @media (max-width: 480px) {
+    #alphabet {
+      padding: 0 0 0 25px;
+    }
+  }
+  
